@@ -4,16 +4,20 @@ import Navbar from "./components/Navbar";
 import HeroTwo from "./pages/WhatIsSportFolio";
 import MarketplaceExplorer from "./pages/MarketplaceExplorer";
 import { Footer } from "./pages/Footer";
+import Background from "./components/Background";
 
 const App = () => {
   return (
-    <div className="bg-[rgb(0,12,26)] text-white">
-      <Navbar />
-      <Hero />
-      <HeroTwo />
-      <MarketplaceExplorer />
-      <Footer />
-    </div>
+    <>
+      {/* <Background className="" /> */}
+      <div className="z-10">
+        <Navbar />
+        <Hero />
+        <HeroTwo />
+        <MarketplaceExplorer />
+        <Footer />
+      </div>
+    </>
   );
 };
 

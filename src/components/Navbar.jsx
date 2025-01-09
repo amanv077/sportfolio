@@ -5,13 +5,8 @@ const Navbar = () => {
     <header className="flex flex-col lg:flex-row justify-between items-center py-5 px-12 lg:px-36">
       <div className="flex w-full lg:w-auto items-center justify-between">
         <a href="/" className="flex items-center text-lg font-bold">
-          <img
-            src="/CardImage.png"
-            alt="SportFolio Logo"
-            className="h-16 w-16 mr-2"
-          />
-          <span className="text-slate-200">Sport</span>
-          <span className="text-slate-400">Folio</span>
+          <img src="/Logo.png" alt="Logo" className="h-6 mr-2" />
+          <img src="/LogoText.png" alt="SportFolio" className="h-4 mr-2" />
         </a>
         <button
           id="astronav-menu"
