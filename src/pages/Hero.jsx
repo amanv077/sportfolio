@@ -14,11 +14,11 @@ const headingStyle = {
 
 const Hero = () => {
   return (
-    <div className="bg-[#000C1A] text-white h-full px-4">
+    <div className="relative overflow-hidden text-white h-full px-4">
       {/* Hero Title Section */}
       <div className="text-center mb-12 my-16 mx-40">
         <h1
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 onest-500"
+          className="text-center mx-auto text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 onest-600 max-w-3xl"
           style={headingStyle}
         >
           Unlock the Power of College Sports NIL Deals

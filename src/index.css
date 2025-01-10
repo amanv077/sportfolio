@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000c1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #001d40;
+    border-radius: 2em;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #344a5f;
+  }
+}
+
 html,
 body {
   @apply w-full h-full bg-[#000C1A] text-white;
