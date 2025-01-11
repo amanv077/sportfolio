@@ -1,4 +1,4 @@
-import ActiveButton from "./Button";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
@@ -53,7 +53,9 @@ const Navbar = () => {
       </nav>
 
       <div className="mt-4 lg:mt-0 lg:flex items-center">
-        <ActiveButton>Get Started</ActiveButton>
+        <Button variant="light" size="sm">
+          Get Started
+        </Button>
       </div>
     </header>
   );

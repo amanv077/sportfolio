@@ -1,0 +1,37 @@
+import { cva } from "class-variance-authority";
+
+const headingStyles = cva(
+  "font-bold tracking-[-0.01em] flex items-center font-onest",
+  {
+    variants: {
+      size: {
+        sm: "text-[24px] leading-[120%]",
+        md: "text-[36px] leading-[115%]",
+        lg: "text-[48px] leading-[105%]",
+      },
+      variant: {
+        white: "text-white",
+        lighterGradient:
+          "bg-gradient-to-t from-[#66B3FF] to-[#E6F2FF] bg-clip-text text-transparent text-shadow",
+        normalGradient:
+          "bg-gradient-to-t from-[#66B3FF] to-[#E6F2FF] bg-clip-text text-transparent text-shadow",
+        darkerGradient:
+          "bg-gradient-to-t from-[#0073E6] to-[#B3D9FF] bg-clip-text text-transparent text-shadow",
+      },
+    },
+    defaultVariants: {
+      size: "lg",
+      variant: "white",
+    },
+  }
+);
+
+const Heading = ({ children, size, variant, className }) => {
+  return (
+    <span className={`${headingStyles({ size, variant })} ${className}`}>
+      {children}
+    </span>
+  );
+};
+
+export default Heading;
