@@ -1,6 +1,6 @@
 import Button from "../components/Button";
 import PlayerInfoCard from "../components/Card/Player/PlayerCard";
-import Heading from "../components/Heading";
+import GradientText from "../components/GradientTtext";
 
 const players = [
   {
@@ -37,12 +37,13 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden text-white h-full px-4">
       <div className="text-center mb-12 my-16 mx-40">
-        <Heading
+        <GradientText
           className="text-center mx-auto text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 onest-600 max-w-3xl"
           variant="lighterGradient"
+          component="h1"
         >
           Unlock the Power of College Sports NIL Deals
-        </Heading>
+        </GradientText>
         <p className="text-lg sm:text-lg lg:text-lg font-base max-w-xl mx-auto">
           Where Athletes, Sponsors, and Fans Connect through Blockchain-Powered
           NIL Contracts and Digital Collectibles.

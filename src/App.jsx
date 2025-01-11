@@ -20,7 +20,7 @@ const App = () => {
         </div>
         <HeroTwo />
         <MarketplaceExplorer />
-        {/* <HowToUseComponent /> */}
+        <HowToUseComponent />
         <Footer />
       </div>
     </>

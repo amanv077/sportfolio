@@ -1,6 +1,6 @@
 import { cva } from "class-variance-authority";
 
-const headingStyles = cva(
+const gradientTextStyles = cva(
   "font-bold tracking-[-0.01em] flex items-center font-onest",
   {
     variants: {
@@ -26,12 +26,19 @@ const headingStyles = cva(
   }
 );
 
-const Heading = ({ children, size, variant, className }) => {
+const GradientText = ({
+  children,
+  size,
+  variant,
+  className,
+  component = "span",
+}) => {
+  const Component = component;
   return (
-    <span className={`${headingStyles({ size, variant })} ${className}`}>
+    <Component className={gradientTextStyles({ size, variant, className })}>
       {children}
-    </span>
+    </Component>
   );
 };
 
-export default Heading;
+export default GradientText;

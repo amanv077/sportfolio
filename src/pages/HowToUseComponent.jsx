@@ -1,6 +1,6 @@
 import Button from "../components/Button";
 import Card from "../components/Card/Gradient";
-import Heading from "../components/Heading";
+import GradientText from "../components/GradientTtext";
 
 function HowToUseComponent() {
   return (
@@ -27,14 +27,18 @@ function HowToUseComponent() {
       </section>
 
       <section>
-        <Heading
-          text="Darker Gradient Heading"
+        <GradientText
+          text="Darker Gradient GradientText"
           size="lg"
           variant="darkerGradient"
         />
-        <Heading text="White Text Heading" size="md" variant="white" />
-        <Heading
-          text="Lighter Gradient Heading"
+        <GradientText
+          text="White Text GradientText"
+          size="md"
+          variant="white"
+        />
+        <GradientText
+          text="Lighter Gradient GradientText"
           size="sm"
           variant="lighterGradient"
         />
