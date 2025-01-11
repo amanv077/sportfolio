@@ -61,7 +61,7 @@ const HeroTwo = () => {
           >
             <GradientCard
               radialGradientPosition="0% 0%"
-              className="relative flex flex-col md:flex-row items-start justify-between"
+              className="relative flex flex-col md:flex-row items-start justify-between gap-1"
             >
               <div className="md:w-1/2">
                 <img
@@ -81,7 +81,7 @@ const HeroTwo = () => {
                   {card.title}
                 </GradientText>
               </div>
-              <ul className="card-list space-y-4 text-sm md:w-1/2 text-left">
+              <ul className="card-list space-y-4 text-sm md:w-1/2 text-left mt-auto mb-0.5">
                 {card.list.map((item) => (
                   <li key={item}>{item}</li>
                 ))}

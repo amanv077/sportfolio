@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  .paragraph {
+    @apply text-lg sm:text-lg lg:text-lg font-normal max-w-xl mx-auto;
+  }
   ::-webkit-scrollbar {
     width: 12px;
     height: 12px;

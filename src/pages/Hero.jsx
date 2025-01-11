@@ -44,7 +44,7 @@ const Hero = () => {
         >
           Unlock the Power of College Sports NIL Deals
         </GradientText>
-        <p className="text-lg sm:text-lg lg:text-lg font-base max-w-xl mx-auto">
+        <p className="paragraph">
           Where Athletes, Sponsors, and Fans Connect through Blockchain-Powered
           NIL Contracts and Digital Collectibles.
         </p>

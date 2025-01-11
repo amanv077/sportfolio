@@ -1,3 +1,5 @@
+import GradientText from "../components/GradientTtext";
+
 const cardData = {
   image: "CardImage.png",
   rarity: "Legendary",
@@ -10,21 +12,19 @@ const cardData = {
 };
 
 const MarketplaceExplorer = () => {
-  const cards = Array(8).fill(cardData); // Array of 8 identical cards
+  const cards = Array(8).fill(cardData);
 
   return (
-    <div className="text-white px-6 md:px-10 ">
-      {/* Banner Section */}
-      <div className="flex flex-col items-center mb-10">
+    <div className="text-white px-10 md:px-10 my-12">
+      <div className="flex flex-col items-center ">
         <img
           loading="lazy"
           src="HeroThree.png"
           alt="Marketplace Banner"
-          className="object-contain max-w-full rounded-md shadow-lg"
+          className="object-contain rounded-md shadow-lg"
         />
       </div>
 
-      {/* Title Section */}
       <div className="text-center mb-10">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
           Explore the <span className="block text-blue-400">Marketplace</span>
@@ -34,8 +34,18 @@ const MarketplaceExplorer = () => {
           bring you closer to the power of sports.
         </p>
       </div>
+      <h2 className="flex text-center align-center justify-center mb-12 mx-auto">
+        <GradientText size="md">Explore the&nbsp;</GradientText>
+        <GradientText size="md" variant="darkerGradient">
+          Marketplace
+        </GradientText>
+      </h2>
 
-      {/* NFT Cards */}
+      <p className="paragraph text-base">
+        From exclusive NFT drops to top-tier sponsorship campaigns, Sportfolio
+        brings the power of sports closer to you.
+      </p>
+
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
         {cards.map((card, index) => (
           <div
@@ -77,7 +87,6 @@ const MarketplaceExplorer = () => {
         ))}
       </div>
 
-      {/* Buttons */}
       <div className="mt-12 flex flex-col items-center">
         <button className="py-3 px-6 text-lg font-semibold text-gray-900 bg-blue-400 rounded-lg shadow-md hover:bg-blue-500 transition-all duration-300">
           Trending NFTs
