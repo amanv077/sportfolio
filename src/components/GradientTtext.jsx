@@ -8,6 +8,7 @@ const gradientTextStyles = cva(
         sm: "text-[24px] leading-[120%]",
         md: "text-[36px] leading-[115%]",
         lg: "text-[48px] leading-[105%]",
+        xl: "text-[80px] leading-[125%]",
       },
       variant: {
         white: "text-white",

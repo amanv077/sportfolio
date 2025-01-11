@@ -81,9 +81,11 @@ const HeroTwo = () => {
                   {card.title}
                 </GradientText>
               </div>
-              <ul className="card-list space-y-4 text-sm md:w-1/2 text-left mt-auto mb-0.5">
+              <ul className="card-list pl-2 space-y-4 text-sm md:w-1/2 text-left mt-auto mb-0.5">
                 {card.list.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item} className="mb-3">
+                    {item}
+                  </li>
                 ))}
               </ul>
             </GradientCard>

@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  .paragraph {
-    @apply text-lg sm:text-lg lg:text-lg font-normal max-w-xl mx-auto;
+  .subheading {
+    @apply text-lg sm:text-lg lg:text-lg font-normal max-w-xl mx-auto text-center;
+    color: #e5f2ff;
   }
   ::-webkit-scrollbar {
     width: 12px;

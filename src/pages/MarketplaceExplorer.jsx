@@ -1,7 +1,9 @@
 import GradientText from "../components/GradientTtext";
+import GradientCard from "../components/Card/Gradient";
+import Button from "../components/Button";
 
 const cardData = {
-  image: "CardImage.png",
+  imageUrl: "/assets/images/CardImage.png",
   rarity: "Legendary",
   edition: "50",
   playerName: "Trae Young",
@@ -10,94 +12,89 @@ const cardData = {
   lowestAsk: "USD $299.00",
   avgSale: "USD $260.50",
 };
+const cards = Array(8).fill(cardData);
 
 const MarketplaceExplorer = () => {
-  const cards = Array(8).fill(cardData);
-
   return (
     <div className="text-white px-10 md:px-10 my-12">
-      <div className="flex flex-col items-center ">
-        <img
-          loading="lazy"
-          src="HeroThree.png"
-          alt="Marketplace Banner"
-          className="object-contain rounded-md shadow-lg"
-        />
-      </div>
+      <img
+        loading="lazy"
+        src="HeroThree.png"
+        alt="Marketplace Banner"
+        className="object-contain rounded-md shadow-lg w-auto mx-auto -mb-24"
+      />
 
-      <div className="text-center mb-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Explore the <span className="block text-blue-400">Marketplace</span>
-        </h2>
-        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          Discover exclusive NFT drops and top-tier sponsorship campaigns that
-          bring you closer to the power of sports.
-        </p>
-      </div>
-      <h2 className="flex text-center align-center justify-center mb-12 mx-auto">
+      <h2 className="flex text-center align-center justify-center mb-3 mx-auto">
         <GradientText size="md">Explore the&nbsp;</GradientText>
         <GradientText size="md" variant="darkerGradient">
           Marketplace
         </GradientText>
       </h2>
 
-      <p className="paragraph text-base">
+      <p className="subheading mb-24">
         From exclusive NFT drops to top-tier sponsorship campaigns, Sportfolio
         brings the power of sports closer to you.
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
+      <div className="flex flex-wrap gap-6 justify-center max-w-7xl mx-auto">
         {cards.map((card, index) => (
           <div
             key={index}
-            className="bg-gray-800 hover:bg-gray-700 transition-all duration-300 text-white rounded-lg shadow-md p-4"
+            className="bg-[#000B1A] border border-[#001E59] rounded-3xl shadow-md min-w-[275px] max-w-[275px] md:max-w-[200px] transform hover:scale-105 transition duration-300 ease-out"
           >
-            <img
-              src={card.image}
-              alt={card.playerName}
-              className="w-full h-32 object-cover rounded-md mb-3"
-            />
-            <div className="mb-2">
-              <h3 className="text-md font-semibold text-blue-300">
+            <GradientCard isLinearGradient>
+              <img
+                src={card.imageUrl}
+                alt={card.playerName}
+                className="w-full object-cover rounded-md"
+              />
+            </GradientCard>
+            <div className="flex flex-col gap-2 p-4">
+              <p className="text-xs mb-1">
+                <span className="font-semibold">{card.rarity}</span>
+                <span className="font-light"> / {card.edition} </span>
+              </p>
+              <GradientText size="sm" className="uppercase">
                 {card.playerName}
-              </h3>
-              <p className="text-sm text-gray-400">{card.description}</p>
+              </GradientText>
+              <div>
+                <p className="text-xs font-light">{card.description}</p>
+                <p className="text-xs font-light">{card.series}</p>
+              </div>
+              <div className="mt-5">
+                <p
+                  className="text-xs font-light flex flex-row justify-between"
+                  style={{ alignItems: "center" }}
+                >
+                  Lowest Ask:
+                  <span className="text-lg font-semibold">
+                    {card.lowestAsk}
+                  </span>
+                </p>
+                <p
+                  className="text-xs font-light flex flex-row justify-between"
+                  style={{ alignItems: "center" }}
+                >
+                  Avg. Sale:
+                  <span className="font-extralight">{card.avgSale}</span>
+                </p>
+              </div>
             </div>
-            <ul className="text-sm space-y-1">
-              <li>
-                <strong className="text-blue-300">Rarity:</strong> {card.rarity}
-              </li>
-              <li>
-                <strong className="text-blue-300">Edition:</strong>{" "}
-                {card.edition}
-              </li>
-              <li>
-                <strong className="text-blue-300">Series:</strong> {card.series}
-              </li>
-              <li>
-                <strong className="text-blue-300">Lowest Ask:</strong>{" "}
-                {card.lowestAsk}
-              </li>
-              <li>
-                <strong className="text-blue-300">Avg. Sale:</strong>{" "}
-                {card.avgSale}
-              </li>
-            </ul>
           </div>
         ))}
       </div>
 
-      <div className="mt-12 flex flex-col items-center">
-        <button className="py-3 px-6 text-lg font-semibold text-gray-900 bg-blue-400 rounded-lg shadow-md hover:bg-blue-500 transition-all duration-300">
+      <div className="my-12 flex flex-col items-center max-w-sm mx-auto">
+        <Button variant="light" fullWidth>
           Trending NFTs
-        </button>
-        <div className="flex gap-4 mt-4">
-          <button className="py-4 px-5 text-sm font-medium bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-all duration-300">
+        </Button>
+        <div className="flex gap-4 mt-4 w-full">
+          <Button variant="dark" fullWidth>
             Athlete Highlights
-          </button>
-          <button className="py-4 px-5 text-sm font-medium bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-all duration-300">
+          </Button>
+          <Button variant="dark" fullWidth>
             Live Deals
-          </button>
+          </Button>
         </div>
       </div>
     </div>

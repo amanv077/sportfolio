@@ -42,7 +42,8 @@ const Button = ({
       {variant === "light" && (
         <>
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 pointer-events-none"
+            role="presentation"
             style={{
               background:
                 "linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(315deg, #041526 20%, #3F8DE8 50%, #041526 80%)",
@@ -50,7 +51,8 @@ const Button = ({
             }}
           />
           <div
-            className="absolute inset-0"
+            className="absolute inset-0 pointer-events-none"
+            role="presentation"
             style={{
               background: `linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%), radial-gradient(117.84% 418.8% at ${radialGradientPosition}, #CCE6FF 0%, #1588FF 44.94%, #0076FF 100%)`,
             }}
@@ -59,7 +61,8 @@ const Button = ({
       )}
       {variant === "dark" && (
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 pointer-events-none"
+          role="presentation"
           style={{
             background: `linear-gradient(0deg, rgba(102, 179, 255, 0.1), rgba(102, 179, 255, 0.1)), radial-gradient(107.04% 380% at ${radialGradientPosition}, rgba(23, 126, 230, 0.3) 0%, rgba(8, 52, 96, 0.3) 44.94%, rgba(0, 12, 26, 0.3) 100%)`,
           }}

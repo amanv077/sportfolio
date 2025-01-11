@@ -3,11 +3,25 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "scroll-reverse": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+      },
+      animation: {
+        scroll: "scroll 10s linear infinite",
+        "scroll-reverse": "scroll-reverse 10s linear infinite",
+      },
       colors: {
-        "dark-blue": "#061928", // Background gradient start
-        "darker-blue": "#020d17", // Background gradient end
-        "card-bg": "#0e2236", // Card background
-        "blue-highlight": "#4ade80", // Highlight text/icon color
+        "dark-blue": "#061928",
+        "darker-blue": "#020d17",
+        "card-bg": "#0e2236",
+        "blue-highlight": "#4ade80",
       },
       fontFamily: {
         onest: ["Onest", "sans-serif"],
