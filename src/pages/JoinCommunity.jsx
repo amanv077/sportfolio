@@ -13,7 +13,7 @@ const list = [
   {
     id: "membership",
     title: "Membership",
-    description: "Redeem exclusive rewards, perks and benefits.",
+    description: "Redeem extremely exclusive rewards, perks and benefits.",
     count: "1000+",
   },
   {
@@ -36,21 +36,21 @@ const radialGradients = ["0% 0%", "100% 100%", "100% 0%", "0% 100%"];
 const lists = [
   {
     id: 0,
-    icon: "athlete-first",
+    icon: "/assets/images/SixthPageIcon01.png",
     heading: "Athlete First",
     description:
       "Guaranteed fair contracts and timely payouts through smart contracts.",
   },
   {
     id: 1,
-    icon: "athlete-first",
+    icon: "/assets/images/SixthPageIcon02.png",
     heading: "Transparency & Security",
     description:
       "Immutable blockchain-backed records ensure trust and compliance.",
   },
   {
     id: 2,
-    icon: "athlete-first",
+    icon: "/assets/images/SixthPageIcon03.png",
     heading: "Limitless Opportunities",
     description:
       "From sponsorships to NFTs, unlock endless possibilities in college sports NIL",
@@ -85,24 +85,17 @@ const JoinCommunity = () => {
   ));
   return (
     <>
-      <div className="text-white px-10 md:px-10 my-12">
-        <img
-          loading="lazy"
-          src="HeroThree.png"
-          alt="Marketplace Banner"
-          className="object-contain rounded-md shadow-lg w-auto mx-auto -mb-24"
-        />
-
-        <h2 className="flex text-center align-center justify-center mb-3 mx-auto">
-          <GradientText size="md">Explore the&nbsp;</GradientText>
+      <div className="text-white px-10 md:px-10 mt-32">
+        <h2 className="flex text-center align-center justify-center mb-3 mx-auto ">
+          <GradientText size="md">Join the&nbsp;</GradientText>
           <GradientText size="md" variant="darkerGradient">
-            Marketplace
+            Sportfolio Community
           </GradientText>
         </h2>
 
-        <p className="subheading mb-24">
-          From exclusive NFT drops to top-tier sponsorship campaigns, Sportfolio
-          brings the power of sports closer to you.
+        <p className="subheading mb-12">
+          Support your favorite athletes and unlock exclusive rewards,
+          merchandise, and voting power.
         </p>
 
         <div className="flex flex-wrap gap-6 max-w-7xl mx-auto">
@@ -117,7 +110,7 @@ const JoinCommunity = () => {
                 radialGradientPosition="50% 120%"
               >
                 <img
-                  src="/assets/images/CardImage.png"
+                  src="/assets/images/backImage.svg"
                   className="w-full object-cover rounded-md"
                 />
                 <GradientText
@@ -143,15 +136,15 @@ const JoinCommunity = () => {
           </div>
         </div>
       </div>
-      <div className="text-white px-10 md:px-10 my-12">
+      <div className="text-white px-10 md:px-10 mt-24">
         <div className="flex flex-wrap gap-24 max-w-5xl mx-auto">
-          <div className="flex flex-col gap-6 flex-1">
-            <GradientCard>
-              <img
-                src="/assets/images/CardImage.png"
-                className="w-full object-cover rounded-md"
-              />
-            </GradientCard>
+          <div className="flex flex-col flex-1">
+            {/* <GradientCard> */}
+            <img
+              src="/assets/images/SixtPageImage.png"
+              className="w-full object-cover rounded-md"
+            />
+            {/* </GradientCard> */}
           </div>
           <div className="flex flex-col gap-4 flex-1 align-center justify-center px-10">
             <h3 className="flex text-left align-center mb-2">
