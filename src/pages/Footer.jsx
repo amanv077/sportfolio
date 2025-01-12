@@ -165,10 +165,10 @@ export const Footer = () => {
               </div>
             </ul>
           </div>
-          <li>
+          {/* <li>
             {" "}
             <img src="/Footer03.png" alt="Logo" />
-          </li>
+          </li> */}
         </div>
       </div>
       <div className="flex flex-col justify-between pt-5 pb-10 border-t sm:flex-row">

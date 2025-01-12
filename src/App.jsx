@@ -9,6 +9,7 @@ import RisingStars from "./pages/RisingStars";
 import JoinCommunity from "./pages/JoinCommunity";
 import IndustryLeaders from "./pages/IndustryLeader";
 import AboutUs from "./pages/AboutUs";
+import StayUpdated from "./pages/StayUpdated";
 
 const players = [
   {
@@ -88,9 +89,22 @@ const App = () => {
         <MarketplaceExplorer />
         <RisingStars players={players} />
         <JoinCommunity />
+        <StayUpdated />
         <IndustryLeaders />
         <AboutUs />
-        <Footer />
+        <div className="relative">
+          <div className="flex flex-row">
+            <Footer />
+          </div>
+          <div
+            className="absolute bottom-0 right-0 w-[30%] h-full bg-no-repeat bg-contain"
+            style={{
+              backgroundImage: "url(/Footer03.png)",
+              backgroundPositionY: "bottom",
+              backgroundSize: "cover",
+            }}
+          ></div>
+        </div>
       </div>
     </>
   );

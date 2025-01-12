@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import GradientText from "../components/GradientTtext";
-import GradientCard from "../components/Card/Gradient";
 import { useRef } from "react";
 
 const slides = [1, 2, 3, 4, 5];
@@ -33,16 +32,14 @@ const Carousel = () => {
           >
             <div className="flex flex-wrap gap-24 max-w-5xl mx-auto">
               <div className="flex flex-col gap-6 flex-1">
-                <GradientCard>
-                  <img
-                    src="/assets/images/CardImage.png"
-                    className="w-full object-cover rounded-md"
-                    style={{ height: "550px" }}
-                  />
-                </GradientCard>
+                <img
+                  src="/assets/images/EightPage01.png"
+                  className="w-full rounded-md"
+                  style={{ height: "550px" }}
+                />
               </div>
               <div className="flex flex-col gap-6 flex-1 align-center justify-center px-10">
-                <img src="/assets/images/CardImage.png" className="w-36" />
+                <img src="/assets/images/EightPage02.png" className="w-28" />
                 <p className="text-3xl">
                   “Sportfolio helped me land my first major sponsorship while
                   staying NCAA-compliant.

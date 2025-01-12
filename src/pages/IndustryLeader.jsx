@@ -1,18 +1,18 @@
 import GradientText from "../components/GradientTtext";
 
 const brands = [
-  { imageUrl: "/assets/images/brand/vite.svg", name: "nike" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "adidas" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "espn" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "cbs" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "ethereum" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "ncaa" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "menttech" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "university" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "visa" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "stripe" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "ea-sports" },
-  { imageUrl: "/assets/images/brand/vite.svg", name: "twitch" },
+  { imageUrl: "/assets/images/brand/01.png", name: "01" },
+  { imageUrl: "/assets/images/brand/05.png", name: "05" },
+  { imageUrl: "/assets/images/brand/addidas.png", name: "addidas" },
+  { imageUrl: "/assets/images/brand/CBS.png", name: "CBS" },
+  { imageUrl: "/assets/images/brand/ESSports.png", name: "ESSports" },
+  { imageUrl: "/assets/images/brand/ESPN.png", name: "ESPN" },
+  { imageUrl: "/assets/images/brand/Last.png", name: "Last" },
+  { imageUrl: "/assets/images/brand/MLogo.png", name: "MLogo" },
+  { imageUrl: "/assets/images/brand/MentTech.png", name: "MentTech" },
+  { imageUrl: "/assets/images/brand/NCAA.png", name: "NCAA" },
+  { imageUrl: "/assets/images/brand/Stripe.png", name: "Stripe" },
+  { imageUrl: "/assets/images/brand/Visa.png", name: "Visa" },
 ];
 
 const BrandScroller = () => {
