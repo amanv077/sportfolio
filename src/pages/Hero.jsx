@@ -4,8 +4,8 @@ import GradientText from "../components/GradientTtext";
 
 const Hero = ({ players }) => {
   return (
-    <div className="relative overflow-hidden text-white h-full px-4">
-      <div className="text-center mb-12 my-16 mx-40">
+    <div className="relative text-white h-full px-4">
+      <div className="text-center my-6 mx-40">
         <GradientText
           className="text-center mx-auto text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 onest-600 max-w-3xl"
           variant="lighterGradient"
@@ -19,18 +19,33 @@ const Hero = ({ players }) => {
         </p>
       </div>
 
-      <div className="flex justify-center mb-8 space-x-4">
+      <div className="flex justify-center mb-2 space-x-4">
         <Button variant="light">Join As An Athlete</Button>
         <Button variant="light">Start Sponsoring</Button>
       </div>
 
-      <div className="text-center mb-8">
-        <h6 className="text-xl font-semibold">Explore Marketplace</h6>
+      <div className="text-center mt-4 flex justify-center flex-col ">
+        <GradientText
+          variant="darkerGradient"
+          className="subheading text-sm text-center mx-auto mb-1"
+        >
+          Explore Marketplace
+        </GradientText>
+        <img
+          src="/assets/images/DoubleDown.svg"
+          alt="logo"
+          width="20px"
+          className="mb-4 mx-auto "
+        />
       </div>
 
-      <div className="flex flex-row gap-3 justify-center items-center mt-12 card-mask-transparent">
-        {players.map((player) => (
-          <PlayerInfoCard {...player} key={player.name} />
+      <div className="flex flex-row gap-6 justify-center items-center mt-2 card-mask-transparent overflow-hidden mx-auto">
+        {players.map((player, index) => (
+          <PlayerInfoCard
+            {...player}
+            key={player.name}
+            isActive={index === 3}
+          />
         ))}
       </div>
     </div>

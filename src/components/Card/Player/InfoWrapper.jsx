@@ -1,41 +1,52 @@
 import CardInfoBackground from "../../../assets/images/card-info-background.svg";
 import BottomLogo from "./BottomLogo";
 
-const PlayerNameStyle = {
-  background:
-    "linear-gradient(108.8deg, #FFFFFF 1.03%, rgba(255, 255, 255, 0) 28.42%, #FFFFFF 55.8%), rgba(255, 255, 255, 0.8)",
-  WebkitBackgroudClip: "text",
-  WebkitTextFillColor: "transparent",
-  backgroundClip: "text",
-  textFillColor: "transparent",
-  backgroundBlendMode: "plus-lighter, normal",
-  textShadow: "0px 6.78261px 11.3043px rgba(0, 0, 0, 0.3)",
-  lineHeight: "1.05",
-};
-
 function PlayerInfoWrapper({
-  name = "Cristiano Ronaldo",
+  firstName,
+  lastName,
   number = 7,
   age = 36,
   color = "black",
+  isDark,
 }) {
   return (
-    <div className="absolute bottom-0 w-full h-1/3">
+    <div
+      className={`absolute bottom-0 w-full h-1/3 ${
+        isDark ? "text-black" : "text-white"
+      }`}
+    >
       <h3
-        className="text-center text-xl font-extrabold uppercase mt-3"
-        style={PlayerNameStyle}
+        className="text-center mt-6"
+        style={{
+          background: `linear-gradient(26deg, ${
+            !isDark ? "#FFF" : "rgb(13,13,13)"
+          } 1.03%, rgba(255, 255, 255, 0) 18.42%,  ${
+            !isDark ? "#FFF" : "rgb(13,13,13)"
+          } 35.8%), ${!isDark ? "#FFF" : "rgb(13,13,13)"} `,
+          WebkitBackgroudClip: "text",
+          WebkitTextFillColor: "transparent",
+          backgroundClip: "text",
+          textFillColor: "transparent",
+          backgroundBlendMode: "plus-lighter, normal",
+          textShadow: "0px 6.78261px 11.3043px rgba(0, 0, 0, 0.3)",
+          lineHeight: "1.05",
+        }}
       >
-        {name}
+        <span className="text-3xl font-extrabold uppercase">{firstName}</span>
+        <br />
+        <span className="text-3xl font-extrabold uppercase">{lastName}</span>
       </h3>
 
       {/* Player Info (Position, Number, Age) */}
       <div
-        className="flex justify-between uppercase items-center text-white w-10/12 mx-auto mt-2"
-        style={{ fontSize: "xx-small", lineHeight: "1.5" }}
+        className="flex justify-between uppercase items-center w-10/12 mx-auto mt-2"
+        style={{ fontSize: "small", lineHeight: "1.5" }}
       >
-        <span className="font-semibold">Forward</span>
-        <span className="font-semibold text-lg">#{number}</span>
-        <span className="font-semibold">Age {age}</span>
+        <span className="flex-1 text-center font-semibold">Forward</span>
+        <span className="flex-1 text-center font-semibold text-xl">
+          #{number}
+        </span>
+        <span className="flex-1 text-center font-semibold">Age {age}</span>
       </div>
 
       <BottomLogo color={color} />

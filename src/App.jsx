@@ -5,7 +5,6 @@ import HeroTwo from "./pages/WhatIsSportFolio";
 import MarketplaceExplorer from "./pages/MarketplaceExplorer";
 import { Footer } from "./pages/Footer";
 import HeroBackgroundImage from "./assets/images/hero-background.png";
-import HowToUseComponent from "./pages/HowToUseComponent";
 import RisingStars from "./pages/RisingStars";
 import JoinCommunity from "./pages/JoinCommunity";
 import IndustryLeaders from "./pages/IndustryLeader";
@@ -13,60 +12,71 @@ import AboutUs from "./pages/AboutUs";
 
 const players = [
   {
-    name: "John Doe",
-    age: 25,
+    firstName: "James",
+    lastName: "Maddison",
+    age: 31,
     number: 10,
-    imageUrl: "/assets/images/03.png",
-    color: "green",
+    imageUrl: "/assets/images/yellow.png",
+    color: "#FFC61A",
+    isDark: true,
   },
   {
-    name: "Jane Smith",
-    age: 22,
-    number: 7,
-    imageUrl: "/assets/images/04.png",
+    firstName: "Andre",
+    lastName: "Onana",
+    age: 31,
+    number: 24,
+    imageUrl: "/assets/images/white.png",
+    color: "white",
+    isDark: true,
+  },
+  {
+    firstName: "Alexander",
+    lastName: "Isak",
+    age: 31,
+    number: 14,
+    imageUrl: "/assets/images/Red.png",
     color: "#BF0020",
   },
   {
-    name: "Mike Johnson",
-    age: 28,
-    number: 15,
-    imageUrl: "/assets/images/05.png",
-    color: "yellow",
+    firstName: "Erling",
+    lastName: "Haaland",
+    age: 31,
+    number: 7,
+    imageUrl: "/assets/images/blue.png",
+    color: "#1247B2",
   },
   {
-    name: "Chris Evans",
-    age: 30,
-    number: 8,
-    imageUrl: "/assets/images/03.png",
-    color: "blue",
+    firstName: "James",
+    lastName: "Maddison",
+    age: 31,
+    number: 10,
+    imageUrl: "/assets/images/yellow.png",
+    color: "#FFC61A",
+    isDark: false,
   },
   {
-    name: "Emily Davis",
-    age: 24,
-    number: 12,
-    imageUrl: "/assets/images/06.png",
-    color: "purple",
+    firstName: "Andre",
+    lastName: "Onana",
+    age: 31,
+    number: 24,
+    imageUrl: "/assets/images/white.png",
+    color: "white",
+    isDark: true,
   },
   {
-    name: "David Wilson",
-    age: 27,
-    number: 9,
-    imageUrl: "/assets/images/07.png",
-    color: "orange",
-  },
-  {
-    name: "Sarah Brown",
-    age: 23,
-    number: 11,
-    imageUrl: "/assets/images/08.png",
-    color: "pink",
+    firstName: "Alexander",
+    lastName: "Isak",
+    age: 31,
+    number: 14,
+    imageUrl: "/assets/images/Red.png",
+    color: "#BF0020",
   },
 ];
 
 const App = () => {
   return (
     <>
-      <div className="z-10 bg-[#000C1A]">
+      <div className="z-10 bg-[#000C1A] overflow-x-hidden w-screen">
         <div
           className="relative bg-cover bg-center bg-no-repeat h-screen"
           style={{ backgroundImage: `url(${HeroBackgroundImage})` }}
@@ -80,7 +90,6 @@ const App = () => {
         <JoinCommunity />
         <IndustryLeaders />
         <AboutUs />
-        <HowToUseComponent />
         <Footer />
       </div>
     </>

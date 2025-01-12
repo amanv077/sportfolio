@@ -16,12 +16,12 @@ const cards = Array(8).fill(cardData);
 
 const MarketplaceExplorer = () => {
   return (
-    <div className="text-white px-10 md:px-10 my-12">
+    <div className="text-white px-10 md:px-10 m-b12">
       <img
         loading="lazy"
         src="HeroThree.png"
         alt="Marketplace Banner"
-        className="object-contain rounded-md shadow-lg w-auto mx-auto -mb-24"
+        className="object-contain rounded-md shadow-lg w-auto mx-auto -mb-24 max-w-7xl"
       />
 
       <h2 className="flex text-center align-center justify-center mb-3 mx-auto">

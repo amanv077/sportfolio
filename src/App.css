@@ -4,7 +4,7 @@
 }
 .card-list li {
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 
 .card-list li::before {
@@ -13,8 +13,8 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-image: url("/assets/images/CheckIcon.svg");
   background-size: contain;
   background-repeat: no-repeat;
