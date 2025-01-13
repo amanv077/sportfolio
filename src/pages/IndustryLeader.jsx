@@ -37,7 +37,6 @@ const BrandScroller = () => {
       </div>
 
       <div className="overflow-hidden mt-8">
-        {/* Second Scrollable List */}
         <div className="flex space-x-6 animate-scroll-reverse">
           {brands.map((brand, index) => (
             <div

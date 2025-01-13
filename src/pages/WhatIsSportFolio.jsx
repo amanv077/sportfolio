@@ -42,7 +42,7 @@ const cards = [
 
 const HeroTwo = () => {
   return (
-    <div className="py-16 px-4 mb-0 mt-52">
+    <div className="py-16 px-4 mb-0 mt-20">
       <h2 className="flex text-center align-center justify-center mb-12 mx-auto">
         <GradientText size="md">How&nbsp;</GradientText>
         <GradientText size="md" variant="darkerGradient">

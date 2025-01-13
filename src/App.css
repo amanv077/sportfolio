@@ -20,8 +20,14 @@
   background-repeat: no-repeat;
 }
 
-.card-list li.athlete-first::before {
-  background-image: url("/assets/images/vite.svg");
+.card-list li.SixthPageIcon01::before {
+  background-image: url("/assets/images/SixthPageIcon01.png");
+}
+.card-list li.SixthPageIcon02::before {
+  background-image: url("/assets/images/SixthPageIcon02.png");
+}
+.card-list li.SixthPageIcon03::before {
+  background-image: url("/assets/images/SixthPageIcon03.png");
 }
 
 .card-mask-transparent {

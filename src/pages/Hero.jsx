@@ -4,7 +4,7 @@ import GradientText from "../components/GradientTtext";
 
 const Hero = ({ players }) => {
   return (
-    <div className="relative text-white h-full px-4">
+    <div className="relative text-white px-4">
       <div className="text-center my-6 mx-40">
         <GradientText
           className="text-center mx-auto text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 onest-600 max-w-3xl"
@@ -39,7 +39,7 @@ const Hero = ({ players }) => {
         />
       </div>
 
-      <div className="flex flex-row gap-6 justify-center items-center mt-2 card-mask-transparent overflow-hidden mx-auto">
+      <div className="flex flex-row gap-6 justify-center items-center mt-2 card-mask-transparent overflow-x-hidden mx-auto">
         {players.map((player, index) => (
           <PlayerInfoCard
             {...player}

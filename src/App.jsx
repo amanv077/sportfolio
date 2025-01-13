@@ -79,7 +79,7 @@ const App = () => {
     <>
       <div className="z-10 bg-[#000C1A] overflow-x-hidden w-screen">
         <div
-          className="relative bg-cover bg-center bg-no-repeat h-screen"
+          className="relative bg-cover bg-center bg-no-repeat w-screen object-cover"
           style={{ backgroundImage: `url(${HeroBackgroundImage})` }}
         >
           <Navbar />
@@ -100,8 +100,6 @@ const App = () => {
             className="absolute bottom-0 right-0 w-[30%] h-full bg-no-repeat bg-contain"
             style={{
               backgroundImage: "url(/Footer03.png)",
-              backgroundPositionY: "bottom",
-              backgroundSize: "cover",
             }}
           ></div>
         </div>
